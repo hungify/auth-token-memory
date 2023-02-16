@@ -47,6 +47,7 @@ const AuthContextProvider = ({ children }: { children: ReactNode }) => {
   const [loading, setLoading] = useState(false);
   const clearAuth = useRef(false);
   const navigate = useNavigate();
+
   const [login] = useLoginMutation();
   const [register] = useRegisterMutation();
   const [logout] = useLogoutMutation();
